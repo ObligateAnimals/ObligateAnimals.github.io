@@ -177,6 +177,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp</li>
@@ -650,6 +652,7 @@ Error message and password prompt
 {"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/more-page-actions","text":"show"},
 {"created":"20250316014033622","creator":"prasvasa","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal","modified":"20250316014128087","modifier":"prasvasa"},
 {"created":"20250407210410374","creator":"ObligateAnimals","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler","modified":"20250407210416751","modifier":"ObligateAnimals"},
+{"created":"20250407210455446","creator":"ObligateAnimals","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette","modified":"20250407210457718","modifier":"ObligateAnimals"},
 {"created":"20250316014147820","creator":"prasvasa","text":"show","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/save-wiki","modified":"20250316014157581","modifier":"prasvasa"},
 {"created":"20250316014139007","creator":"prasvasa","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/timestamp","modified":"20250321135441386","modifier":"ObligateAnimalsHost"},
 {"created":"20250407210334246","creator":"ObligateAnimals","text":"hide","title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all","modified":"20250407210420126","modifier":"ObligateAnimals"},
@@ -693,7 +696,7 @@ Error message and password prompt
 {"title":"$:/Mptw5/TaggingList","text":"\u003C!--\n  This should be tagged with $:/tags/ViewTemplate so it is included in the\n  layout for every tiddler. Its purpose is to always show a list of tiddlers that\n  are tagged with this tiddler at the bottom of the tiddler view. It's inspired by\n  the old MPTW, see http://mptw.tiddlyspot.com/ .\n\n  This pairs well with the \"new here\" button and the \"new journal here\" button\n  which can be enabled in the Appearance/Toolbars section of the Control Panel.\n\n-->\n\u003C$reveal type=\"nomatch\" stateTitle=\"\u003C\u003Cfolded-state>>\"\n  text=\"hide\" tag=\"div\" retain=\"yes\" animate=\"yes\" style=\"padding-top: 1em;\">\n  \u003C!-- Do this so the Tagging: label is not shown if the list is empty -->\n  \u003C$list filter=\"[all[current]tagging[]limit[1]]\">\n    \u003Cdiv class=\"tc-subtitle\">Tagging:\u003C/div>\n  \u003C/$list>\n  \u003Cul style=\"margin-top: 0.25em; margin-bottom: 0px; padding-left: 2em;\">\n    \u003C$list filter=\"[all[current]tagging[]]\">\n      \u003Cli>\n        \u003C$link />\n        \u003Cspan class=\"tc-subtitle\" style=\"font-size: 1em;\">{{!!description}}\u003C/span>\n      \u003C/li>\n    \u003C/$list>\n  \u003C/ul>\n\u003C/$reveal>","tags":"$:/tags/ViewTemplate MPTW5","type":"text/vnd.tiddlywiki","description":"Adds a \"tagging\" list to each tiddler in view mode","code-body":"yes"},
 {"title":"$:/Mptw5/TagLinks","text":"\u003C!--\n  Add links to the tiddler's tags above the title.\n  The links just take you to the tag's tiddler.\n-->\n\u003C$reveal type=\"nomatch\" stateTitle=\"\u003C\u003Cfolded-state>>\" text=\"hide\" tag=\"div\"\n  retain=\"yes\" animate=\"yes\" style=\"padding-bottom: 0px; margin-bottom: -2px;\">\n  \u003C$list filter=\"[all[current]tags[]sort[title]]\">\n    \u003C$link /> &nbsp;\n  \u003C/$list>\n\u003C/$reveal>","tags":"$:/tags/ViewTemplate MPTW5","list-before":"$:/core/ui/ViewTemplate/title","description":"Adds clickable tag links above the title in view mode","code-body":"yes"},
 {"title":"$:/Mptw5/Version","text":"1.35-5752b (external core)"},
-{"created":"20250315004331191","creator":"prasvasa","title":"$:/palette","text":"$:/palettes/SolarizedDark 1","modified":"20250321204817410","modifier":"ObligateAnimalsHost"},
+{"created":"20250315004331191","creator":"prasvasa","title":"$:/palette","text":"$:/palettes/SolarizedDark 1","modified":"20250407210558645","modifier":"ObligateAnimals"},
 {"title":"$:/palettes/Blanca"},
 {"title":"$:/palettes/Blue"},
 {"title":"$:/palettes/BrightMute"},
@@ -772,7 +775,7 @@ Error message and password prompt
 {"text":"no","title":"$:/status/IsLoggedIn"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
 {"created":"20250313174629178","creator":"p","text":"ObligateAnimals","title":"$:/status/UserName","modified":"20250404161145921","modifier":"ObligateAnimalsU"},
-{"created":"20250407210354269","creator":"ObligateAnimals","title":"$:/StoryList","text":"","list":"$:/Manager [[Table of Contents]] [[Animal Safety]] [[List of Animal Resources/Topics]] [[List of Helpful Animal-Human Gear]]","modified":"20250407210426526","modifier":"ObligateAnimals"},
+{"title":"$:/StoryList","created":"20250407210527038","creator":"ObligateAnimals","text":"","list":"[[Table of Contents]]","modified":"20250407210527038","modifier":"ObligateAnimals"},
 {"created":"20250316002240471","creator":"prasvasa","title":"$:/tags/MenuBar","list":"$:/plugins/tiddlywiki/menubar/items/contents $:/plugins/tiddlywiki/menubar/items/hamburger $:/plugins/tiddlywiki/menubar/items/toprightbar $:/plugins/tiddlywiki/menubar/items/topleftbar $:/plugins/tiddlywiki/menubar/items/search $:/plugins/tiddlywiki/menubar/items/sidebar $:/plugins/tiddlywiki/menubar/items/pagecontrols $:/plugins/tiddlywiki/menubar/items/server","modified":"20250329182325022","modifier":"ObligateAnimalsUser"},
 {"created":"20250321135329488","creator":"ObligateAnimalsHost","title":"$:/tags/PageControls","list":"$:/core/ui/Buttons/home $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/layout $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/Mptw5/DownloadButton $:/core/ui/Buttons/refresh $:/core/ui/Buttons/network-activity $:/core/ui/Buttons/more-page-actions","modified":"20250321140800783","modifier":"ObligateAnimalsHost"},
 {"created":"20250312234743479","creator":"ObligateAnimalsHost","title":"$:/theme","text":"$:/themes/tiddlywiki/heavier","modified":"20250321225629183","modifier":"ObligateAnimalsHost"},
